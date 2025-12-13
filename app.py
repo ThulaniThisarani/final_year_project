@@ -34,9 +34,9 @@ CLASS_NAMES = [
 def load_cinnamon_model():
     # Try main filename; adjust if your model has a different name
     try:
-        model = load_model("cinnamon_leaf_disease_classifier.h5")
+        model = load_model("cinnamon_leaf_disease_final.keras")
     except Exception:
-        model = load_model("best_cinnamon_model.h5")
+        model = load_model("best_model.h5")
     return model
 
 model = load_cinnamon_model()
